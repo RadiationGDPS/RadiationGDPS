@@ -15,6 +15,12 @@ file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
 
 # Set up the mod binary
 add_library(${PROJECT_NAME} SHARED ${SOURCES})
+# Allow easy includes
+set(SRC_DIR "${PROJECT_SOURCE_DIR}/src")
+target_include_directories(${PROJECT_NAME}
+    PRIVATE
+        ${SRC_DIR}/
+)
 
 if (NOT DEFINED ENV{GEODE_SDK})
     message(FATAL_ERROR "Unable to find Geode SDK! Please define GEODE_SDK environment variable to point to Geode")
