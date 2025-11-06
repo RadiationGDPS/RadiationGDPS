@@ -11,6 +11,13 @@
 	"version": "v1.0.0",
 	"developer": "GDSlops",
 	"description": "",
+	"resources": {
+		"spritesheets": {
+			"PartnersSheet": [
+				"resources/sheets/ui/partners/*.png"
+			]
+		}
+	},
 	"dependencies": {
 		"geode.node-ids": ">=v1.21.1"
 	}
