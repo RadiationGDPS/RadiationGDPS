@@ -1,0 +1,17 @@
+{
+	"geode": "4.9.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "gdslops.rgdps_mod",
+	"name": "RGDPS mod",
+	"version": "v1.0.0",
+	"developer": "GDSlops",
+	"description": "",
+	"dependencies": {
+		"geode.node-ids": ">=v1.20.0"
+	}
+}
