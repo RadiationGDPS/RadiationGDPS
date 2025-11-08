@@ -8,7 +8,7 @@ CCMenuItemSpriteExtra* rgdps::createQuestsButton(char const* sprFrameName, float
 		auto gsm = GameStatsManager::get();
 
 		for (std::uint8_t i = 1u; i <= 3u; ++i) {
-			if (gsm->getChallenge(i)->m_canClaim)
+			if (auto quest = gsm->getChallenge(i); quest && quest->m_canClaim)
 				return true;
 		}
 
