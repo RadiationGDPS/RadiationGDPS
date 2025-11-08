@@ -14,7 +14,10 @@
 	"resources": {
 		"spritesheets": {
 			"PartnersSheet": [
-				"resources/sheets/ui/partners/*.png"
+				"resources/sheets/partners/*.png"
+			],
+			"UISheet": [
+				"resources/sheets/ui/*.png"
 			]
 		}
 	},
