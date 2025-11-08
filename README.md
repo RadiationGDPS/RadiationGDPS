@@ -1,25 +1,18 @@
 
-# RGDPSmod
+# RGDPS Mod
 
-insert text here
+The official RadiationGDPS mod
 
-## Getting started
+<img src="logo.png" width="150" alt="Mod Logo" />
 
-We recommend heading over to [the getting started section on our docs](https://docs.geode-sdk.org/getting-started/) for useful info on what to do next.
+## Installation
+1) Download the latest version from [releases](https://github.com/Fryy55/gd-requests/releases)
+2) Install manually via Geode
 
-## Build instructions
+## Feedback
+You can leave your feedback in the Issues tab or by joining our [Discord server](https://discord.gg/xDupyJ8Mp5)
 
-For more info, see [our docs](https://docs.geode-sdk.org/getting-started/create-mod#build)
+## License
+This project is distributed under the **Apache-2.0 License**.
 
-```sh
-# Assuming you have the Geode CLI set up already
-geode build
-```
-
-## Resources
-
-* [Geode SDK Documentation](https://docs.geode-sdk.org/)
-* [Geode SDK Source Code](https://github.com/geode-sdk/geode/)
-* [Geode CLI](https://github.com/geode-sdk/cli)
-* [Bindings](https://github.com/geode-sdk/bindings/)
-* [Dev Tools](https://github.com/geode-sdk/DevTools)
+See `LICENSE` for permissions, conditions and limitations.

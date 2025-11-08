@@ -6,11 +6,11 @@
 		"mac": "2.2074",
 		"ios": "2.2074"
 	},
-	"id": "gdslops.rgdps_mod",
-	"name": "RGDPS mod",
-	"version": "v1.0.0",
-	"developer": "GDSlops",
-	"description": "",
+	"id": "rcgdteam.rgdps_mod",
+	"name": "RGDPS Mod",
+	"version": "v1.0.0-alpha.1",
+	"developer": "RCGDTeam",
+	"description": "You've successfully installed RGDPS!",
 	"resources": {
 		"spritesheets": {
 			"PartnersSheet": [
@@ -20,6 +20,19 @@
 				"resources/sheets/ui/*.png"
 			]
 		}
+	},
+	"tags": [
+		"online",
+		"content",
+		"interface",
+		"editor",
+		"enhancement",
+		"universal"
+	],
+	"links": {
+		"homepage": "https://youtube.com/@rcgdteam_1290",
+		"source": "https://github.com/RadiationGDPS/RadiationGDPS",
+		"community": "https://discord.gg/xDupyJ8Mp5"
 	},
 	"dependencies": {
 		"geode.node-ids": ">=v1.21.1"
