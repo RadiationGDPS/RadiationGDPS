@@ -1,5 +1,5 @@
 
-# RGDPS Mod
+# RGDPS Mod Pack
 
 The official RadiationGDPS mod
 
