@@ -6,7 +6,7 @@ The official RadiationGDPS mod
 <img src="logo.png" width="150" alt="Mod Logo" />
 
 ## Installation
-1) Download the latest version from [releases](https://github.com/Fryy55/gd-requests/releases)
+1) Download the latest version from [releases](https://github.com/RadiationGDPS/RadiationGDPS/releases)
 2) Install manually via Geode
 
 ## Feedback
