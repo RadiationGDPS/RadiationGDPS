@@ -10,7 +10,8 @@ class $modify(GJMoreGamesLayer) {
 		GJMoreGamesLayer::customSetup();
 
 		m_listLayer->getChildByType<CustomListView>(0)->setVisible(false);
-		m_mainLayer->getChildByType<CCLabelBMFont>(0)->setVisible(false);
+		if (auto nothingHereLabel = m_mainLayer->getChildByType<CCLabelBMFont>(0))
+			nothingHereLabel->setVisible(false);
 
 		static_cast<CCLabelBMFont*>(m_listLayer->getChildByID("title"))->setString("Neon Partners");
 
