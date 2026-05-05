@@ -15,6 +15,7 @@ public:
 private:
 	bool init(Partner);
 
-	// Fields
-	static float s_width;
+// Fields
+private:
+	static inline float s_width = 55.f;
 };

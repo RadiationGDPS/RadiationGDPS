@@ -4,10 +4,6 @@
 using namespace geode::prelude;
 
 
-// Static fields init
-float PartnerCell::s_width = 55.f;
-
-
 PartnerCell* PartnerCell::create(Partner partner) {
 	auto ret = new PartnerCell;
 
