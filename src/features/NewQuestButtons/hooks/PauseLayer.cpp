@@ -6,7 +6,8 @@ using namespace geode::prelude;
 
 
 class $modify(PauseLayer) {
-	void customSetup() $override {
+	$override
+	void customSetup() {
 		PauseLayer::customSetup();
 
 		auto menu = static_cast<CCMenu*>(this->getChildByID("right-button-menu"));

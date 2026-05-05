@@ -6,7 +6,8 @@ using namespace geode::prelude;
 
 
 class $modify(MenuLayer) {
-	bool init() $override {
+	$override
+	bool init() {
 		if (!MenuLayer::init())
 			return false;
 

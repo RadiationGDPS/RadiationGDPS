@@ -8,7 +8,8 @@ using namespace geode::prelude;
 
 
 class $modify(GJMoreGamesLayer) {
-	void customSetup() $override {
+	$override
+	void customSetup() {
 		GJMoreGamesLayer::customSetup();
 
 		m_listLayer->getChildByType<CustomListView>(0)->setVisible(false);
