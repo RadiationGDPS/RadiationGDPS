@@ -1,6 +1,8 @@
 #include <Geode/modify/GJMoreGamesLayer.hpp>
 
-#include <amber/layouts/ListLayout.hpp>
+#include "../types/PartnerCell.hpp"
+
+//#include <amber/layouts/ListLayout.hpp>
 
 using namespace geode::prelude;
 
@@ -23,34 +25,10 @@ class $modify(GJMoreGamesLayer) {
 		m_listLayer->addChild(scrollLayer);
 
 		auto contentLayer = scrollLayer->m_contentLayer;
-		contentLayer->setLayout(ListLayout::create(scrollSize.height));
+		//contentLayer->setLayout(ListLayout::create(scrollSize.height));
 
-
-		auto createPartnerButton = [&scrollSize](std::string_view partner, std::string link) {
-			auto partnerStr = fmt::format("partner-{}.png"_spr, partner);
-
-			auto sprite = CCSprite::createWithSpriteFrameName(partnerStr.c_str());
-			sprite->setScale(scrollSize.width / sprite->getContentWidth());
-			auto ret = CCMenu::create();
-			ret->setContentSize(sprite->getScaledContentSize());
-
-			auto button = CCMenuItemExt::createSpriteExtra(
-				sprite,
-				[capLink = std::move(link)](CCMenuItemSpriteExtra*) {
-					geode::utils::web::openLinkInBrowser(capLink);
-				}
-			);
-			button->ignoreAnchorPointForPosition(true);
-			button->m_scaleMultiplier = 1.f;
-
-			ret->addChild(button);
-			ret->setID(std::move(partnerStr));
-
-			return ret;
-		};
-
-		contentLayer->addChild(createPartnerButton("high", "https://highgdps.ps.fhgdps.com/dashboard"));
-		contentLayer->addChild(createPartnerButton("future", "https://futuregdpss.ps.fhgdps.com/dashboard"));
+		contentLayer->addChild(PartnerCell::create(PartnerCell::High));
+		contentLayer->addChild(PartnerCell::create(PartnerCell::Future));
 
 		contentLayer->updateLayout();
 
