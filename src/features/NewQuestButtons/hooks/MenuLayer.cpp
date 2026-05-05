@@ -12,7 +12,7 @@ class $modify(MenuLayer) {
 			return false;
 
 		auto menu = static_cast<CCMenu*>(this->getChildByID("right-side-menu"));
-		menu->addChild(rgdps::createQuestsButton("quests-icon-menu.png"_spr, 0.9f));
+		menu->addChild(rgdps::createQuestsButton(true));
 		menu->updateLayout();
 
 		return true;

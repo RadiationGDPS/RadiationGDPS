@@ -5,6 +5,6 @@
 
 namespace rgdps {
 
-CCMenuItemSpriteExtra* createQuestsButton(char const* sprFrameName, float sprScale);
+CCMenuItemSpriteExtra* createQuestsButton(bool menu);
 
-};
+}; // namespace rgdps

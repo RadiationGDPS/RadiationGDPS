@@ -11,7 +11,7 @@ class $modify(PauseLayer) {
 		PauseLayer::customSetup();
 
 		auto menu = static_cast<CCMenu*>(this->getChildByID("right-button-menu"));
-		menu->addChild(rgdps::createQuestsButton("quests-icon-pause.png"_spr, 0.6f));
+		menu->addChild(rgdps::createQuestsButton(false));
 		menu->updateLayout();
 
 		return;
