@@ -2,7 +2,7 @@
 
 #include "../types/PartnerCell.hpp"
 
-//#include <amber/layouts/ListLayout.hpp>
+#include <fryy_55.amber/include/layouts/ListLayout.hpp>
 
 using namespace geode::prelude;
 
@@ -26,7 +26,7 @@ class $modify(GJMoreGamesLayer) {
 		m_listLayer->addChild(scrollLayer);
 
 		auto contentLayer = scrollLayer->m_contentLayer;
-		//contentLayer->setLayout(ListLayout::create(scrollSize.height));
+		contentLayer->setLayout(amber::layouts::ListLayout::create(scrollSize.height));
 
 		contentLayer->addChild(PartnerCell::create(PartnerCell::High));
 		contentLayer->addChild(PartnerCell::create(PartnerCell::Future));
